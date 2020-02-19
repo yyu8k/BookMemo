@@ -1,24 +1,46 @@
-# README
+# BookMemo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
+読んだ本の内容をメモできるアプリケーションです。
 
-Things you may want to cover:
 
-* Ruby version
+## Development Environment
+  - Ruby '2.5.1'
+  - Rails '5.2.3'
+  - MySQL '5.6'
 
-* System dependencies
 
-* Configuration
+## DB Design
+### User Table
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|email|string|null: false, unique: true|
+|password|string|null: false|
 
-* Database creation
+### Association
+- has_many :memos
+- has_many :books
 
-* Database initialization
 
-* How to run the test suite
+### Book Table
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|author|string|null: false|
+|text|text|null: false|
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
+- has_many :users
+- has_many :memos
 
-* Deployment instructions
 
-* ...
+## Memo Table
+|Column|Type|Options|
+|------|----|-------|
+|user|references|null: false, foreign_key: true|
+|book|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :book
