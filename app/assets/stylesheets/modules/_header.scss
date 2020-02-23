@@ -1,0 +1,20 @@
+.books__index__header {
+  width: 100%;
+  height: 90px;
+  position: relative;
+  background: -moz-linear-gradient(top, #d3d3d3, #FFF);     // ヘッダーの背景のグラデーション
+  background: -webkit-linear-gradient(top, #d3d3d3, #FFF);  // ヘッダーの背景のグラデーション
+  background: linear-gradient(to bottom, #d3d3d3, #FFF);    // ヘッダーの背景のグラデーション
+  &__title {
+    h1 {
+      font-size: 50px;
+      font-family: 'Trebuchet MS',sans-serif;      // 「https://saruwakakun.com/font-family」を参照
+      font-weight: normal;                         // 太字を解除。細字にするには「font-weight: lighter;」
+      position: absolute;                          // 中央寄せにするために記述する①
+      top: 50%;                                    // 中央寄せにするために記述する②
+      left: 50%;                                   // 中央寄せにするために記述する③
+      -webkit-transform : translate(-50%,-50%);    // 中央寄せにするために記述する④
+      transform : translate(-50%,-50%);            // 中央寄せにするために記述する⑤
+    }
+  }
+}
