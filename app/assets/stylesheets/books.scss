@@ -1,0 +1,15 @@
+.books__index__contents {
+  &__memo {
+    padding: 20px;
+    background: -moz-linear-gradient(#797979, #333333);
+    background: -webkit-linear-gradient(#797979, #333333);
+    background: linear-gradient(to right, #797979, #333333);
+    color: #FFF;
+    height: 300px;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-family: 'klee',sans-serif;
+    font-weight: normal;
+  }
+}
