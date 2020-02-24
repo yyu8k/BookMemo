@@ -1,3 +1,12 @@
 .books__index
   = render 'shared/header'
-  .books__index__main
+  .books__index__contents
+    - @books.each do |book|
+      .books__index__contents__memo
+        %h1
+          = book.title
+          −
+          = book.author
+        %br
+        %h3
+          = book.text
