@@ -1,12 +1,12 @@
 .books__index__contents {
   &__memo {
-    padding: 20px;
+    padding: 50px;
     background: -moz-linear-gradient(#797979, #333333);
     background: -webkit-linear-gradient(#797979, #333333);
     background: linear-gradient(to right, #797979, #333333);
     color: #FFF;
     height: 300px;
-    width: 55%;
+    width: 45%;
     margin: 0 auto;
     margin-top: 40px;
     font-family: 'klee',sans-serif;
@@ -19,7 +19,54 @@
   margin: 20px 0;
   font-size: 30px;
   font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+  color: #262626;
   .fa.fa-edit {
     size: 20px;
   }
+}
+.books__new__form {
+  width: 40%;
+  margin: 0 auto;
+  color: #262626;
+  h1 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+  .text-field {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+  }
+  .text-area {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    resize: none;            // 右下の//を消すため
+  }
+  &__button {
+    margin: 20px 0;
+    text-align:center;
+    .submit-button {
+      width: 30%;
+      height: 40px;
+      display: inline-block;
+      padding: 0.3em 1em;
+      text-decoration: none;
+      color: #262626;
+      border: solid 2px #262626;
+      border-radius: 3px;
+      transition: .4s;
+      font-size: 16px;
+    }
+    .submit-button:hover {
+      background: #262626;
+      color: white;
+    }
+ }
 }
