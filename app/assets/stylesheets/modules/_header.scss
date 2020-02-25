@@ -1,4 +1,5 @@
 .books__index__header {
+  color: #262626;
   width: 100%;
   height: 90px;
   position: relative;
@@ -15,6 +16,18 @@
       left: 50%;                                   // 中央寄せにするために記述する③
       -webkit-transform : translate(-50%,-50%);    // 中央寄せにするために記述する④
       transform : translate(-50%,-50%);            // 中央寄せにするために記述する⑤
+    }
+    .fa.fa-edit {
+      float: right;
+      font-size: 50px;
+      margin: 22px 40px 20px 20px;
+      color: #262626;
+    }
+    .fa.fa-edit:link, .fa.fa-edit:visited, .fa.fa-edit:active {
+      color: #262626;
+    }
+    .fa.fa-edit:hover {
+      color: #797979;
     }
   }
 }
