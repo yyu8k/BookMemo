@@ -1,9 +1,9 @@
 .books__index__contents {
   &__memo {
     padding: 50px;
-    background: -moz-linear-gradient(#797979, #333333);
-    background: -webkit-linear-gradient(#797979, #333333);
-    background: linear-gradient(to right, #797979, #333333);
+    background: -moz-linear-gradient(#797979, #333333);             // 背景のグラデーション
+    background: -webkit-linear-gradient(#797979, #333333);          // 背景のグラデーション
+    background: linear-gradient(to right, #797979, #333333);        // 背景のグラデーション
     color: #FFF;
     height: 300px;
     width: 45%;
