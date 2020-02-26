@@ -3,10 +3,13 @@
   .books__index__contents
     - @books.each do |book|
       .books__index__contents__memo
-        %h1
-          = book.title
-          &nbsp;&nbsp;−&nbsp;&nbsp;
-          = book.author
+        .books__index__contents__memo__header
+          .books__index__contents__memo__header__title
+            “
+            = book.title
+            ”
+          .books__index__contents__memo__header__author
+            = book.author
         %br
         %h3
           = book.text
