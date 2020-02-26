@@ -10,7 +10,7 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
-    Book.create(title: book_params[:title], author: book_params[:author], text: book_params[:text])
+    # Book.create(title: book_params[:title], author: book_params[:author], text: book_params[:text])
     if @book.save
       redirect_to root_path
     else
