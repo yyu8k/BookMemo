@@ -9,12 +9,7 @@ class BooksController < ApplicationController
   end
 
   def create
-    @book = Book.new(book_params)
-    if @book.save
-      redirect_to root_path
-    else
-      redirect_to new_book_path
-    end
+    Book.create(title: book_params[:title], author: book_params[:author], text: book_params[:text])
   end
 
   private
