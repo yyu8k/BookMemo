@@ -32,6 +32,7 @@
   font-size: 30px;
   font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
   color: #262626;
+  font-weight: 200;
   .fa.fa-edit {
     size: 20px;
   }
@@ -81,4 +82,20 @@
       color: white;
     }
  }
+}
+
+.books__create {
+  &__message {
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 390px;
+    font-weight: 200;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+    color: #262626;
+    .fa.fa-check-circle {
+      font-size: 40px;
+    }
+  }
 }
