@@ -4,10 +4,12 @@
     - @books.each do |book|
       .books__index__contents__memo
         .books__index__contents__memo__header
+          “
           .books__index__contents__memo__header__title
-            “
             = book.title
-            ”
+          ”
+        .books__index__contents__memo__header
+          
           .books__index__contents__memo__header__author
             = book.author
         %br
