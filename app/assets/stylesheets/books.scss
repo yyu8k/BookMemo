@@ -1,26 +1,35 @@
 .books__index__contents {
+  background-color: #dcdcdc;
+  padding-top: 40px;
+  padding-bottom: 40px;
   &__memo {
+    
     padding: 50px;
-    background: -moz-linear-gradient(#797979, #333333);             // 背景のグラデーション
-    background: -webkit-linear-gradient(#797979, #333333);          // 背景のグラデーション
-    background: linear-gradient(to right, #797979, #333333);        // 背景のグラデーション
+    background-color: #282d33;
     color: #FFF;
-    height: 300px;
+    max-height: 300px;
     width: 45%;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-bottom: 40px;
     font-family: 'klee',sans-serif;
     font-weight: normal;
     &__header {
-      height: 100px;
-      &__title {
-        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-        font-size: 50px;
+      // height: 100px;
+      font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+      font-size: 50px;
+      display: flex;
+      div.books__index__contents__memo__header__title:first-letter {
+        color: #cc9f9f;
+        font-size: 90px;
+      }
+      div.books__index__contents__memo__header__author:first-letter {
+        color: #e6e5b3;
+        font-size: 35px;
       }
       &__author {
         font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-        font-size:20px;
-        float: right;
+        font-size: 25px;
+        margin: 0 0 0 auto;
       }
     }
   }
