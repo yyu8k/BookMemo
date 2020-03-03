@@ -2,32 +2,32 @@
   color: #262626;
   width: 100%;
   height: 90px;
-  position: relative;
-  background: -moz-linear-gradient(top, #d3d3d3, #FFF);     // ヘッダーの背景のグラデーション
-  background: -webkit-linear-gradient(top, #d3d3d3, #FFF);  // ヘッダーの背景のグラデーション
-  background: linear-gradient(to bottom, #d3d3d3, #FFF);    // ヘッダーの背景のグラデーション
+  background-color: #708090;
+  font-family: 'Avenir',sans-serif;         // font-family「https://saruwakakun.com/font-family」を参照
+  font-weight: 200;                         // 字の太さを指定
   &__title {
-    h1 {
-      font-size: 50px;
-      font-family: 'Trebuchet MS',sans-serif;      // 「https://saruwakakun.com/font-family」を参照
-      font-weight: normal;                         // 太字を解除。細字にするには「font-weight: lighter;」
-      position: absolute;                          // 中央寄せにするために記述する①
-      top: 50%;                                    // 中央寄せにするために記述する②
-      left: 50%;                                   // 中央寄せにするために記述する③
-      -webkit-transform : translate(-50%,-50%);    // 中央寄せにするために記述する④
-      transform : translate(-50%,-50%);            // 中央寄せにするために記述する⑤
-    }
-    .fa.fa-edit {
-      float: right;
-      font-size: 50px;
-      margin: 22px 40px 20px 20px;
-      color: #262626;
-    }
-    .fa.fa-edit:link, .fa.fa-edit:visited, .fa.fa-edit:active {
-      color: #262626;
-    }
-    .fa.fa-edit:hover {
-      opacity: 0.3;
-    }
+    color: #f0f8ff;
+    font-size: 20px;
+    text-decoration: none;                    // linkの下線を消す
+    margin: 0 0 0 50px;
+    line-height: 90px;
+  }
+  &__write {
+    color: #f0f8ff;
+    font-size: 18px;
+    text-decoration: none;
+    float: right;
+    margin: 0 50px 0 0;
+    line-height: 91px;
+  }
+  &__write:hover {
+    opacity: 0.4;
+  }
+  .fa.fa-edit {
+    font-size: 20px;
+    color: #f0f8ff;
+    float: right;
+    line-height: 90px;
+    margin: 0 5px 0 0;
   }
 }
