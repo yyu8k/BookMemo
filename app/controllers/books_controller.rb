@@ -3,7 +3,8 @@ class BooksController < ApplicationController
   before_action :set_book, only: [:edit, :destroy, :update, :show]
 
   def index
-    @books = Book.all
+    @books = Book.page(params[:page]).per(5).order("created_at DESC")
+    # @books = Book.all
   end
 
   def new
