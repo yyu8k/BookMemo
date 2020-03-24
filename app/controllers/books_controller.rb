@@ -1,11 +1,19 @@
 class BooksController < ApplicationController
 
+  before_action :set_book, only: [:edit, :destroy, :update, :show]
+
   def index
     @books = Book.all
   end
 
   def new
-    @book = Book.new
+    @books = Book.new
+  end
+
+  def destroy
+    # book = Book.find(params[:id]).destroy
+    @books.destroy
+    redirect_to root_path
   end
 
   def create
@@ -16,6 +24,10 @@ class BooksController < ApplicationController
 
   def book_params
     params.require(:book).permit(:title, :author, :text)
+  end
+
+  def set_book
+    @books = Book.find(params[:id])
   end
 
 end
