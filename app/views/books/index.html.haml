@@ -8,9 +8,9 @@
           .books__index__contents__memo__header__title
             = book.title
           ”
-          %i.fa.fa-chevron-down
+          = link_to book_path(book.id), method: :delete, data: { confirm: "削除しますか？" }  do
+            = fa_icon 'chevron-down', class: 'top__contents__book__box__list__icon1'
         .books__index__contents__memo__header
-          
           .books__index__contents__memo__header__author
             = book.author
         %br
