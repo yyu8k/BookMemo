@@ -16,6 +16,7 @@
       font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
       font-size: 50px;
       display: flex;
+      position: relative;
       div.books__index__contents__memo__header__title:first-letter {
         color: #cc9f9f;
         font-size: 90px;
@@ -28,6 +29,22 @@
         font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
         font-size: 25px;
         margin: 0 0 0 auto;
+      }
+      .fa.fa-chevron-down {
+        color: white;
+        padding: 16px 10px 10px;
+        position: absolute;
+        right: 0;
+        box-sizing: inherit;
+        font-size: 20px;
+        display: inline-block;  // test
+      }
+      .fa.fa-chevron-down:hover {
+        opacity: 0.8;
+      }
+      .fa.fa-chevron-down:hover .books__index__contents__memo__header__more {
+          visibility: visible;  // test
+          color: red;
       }
     }
   }
