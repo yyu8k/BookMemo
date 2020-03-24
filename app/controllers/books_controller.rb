@@ -4,7 +4,6 @@ class BooksController < ApplicationController
 
   def index
     @books = Book.page(params[:page]).per(5).order("created_at DESC")
-    # @books = Book.all
   end
 
   def new
@@ -12,7 +11,6 @@ class BooksController < ApplicationController
   end
 
   def destroy
-    # book = Book.find(params[:id]).destroy
     @books.destroy
     redirect_to root_path
   end
