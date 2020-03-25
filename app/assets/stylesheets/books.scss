@@ -6,7 +6,7 @@
     padding: 50px;
     background-color: #282d33;
     color: #f0f8ff;
-    max-height: 300px;
+    min-height: 200px;
     width: 45%;
     margin: 0 auto;
     margin-bottom: 40px;
@@ -14,20 +14,20 @@
     font-weight: normal;
     &__header {
       font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-      font-size: 50px;
+      font-size: 30px;
       display: flex;
       position: relative;
       div.books__index__contents__memo__header__title:first-letter {
         color: #cc9f9f;
-        font-size: 90px;
+        font-size: 60px;
       }
       div.books__index__contents__memo__header__author:first-letter {
         color: #e6e5b3;
-        font-size: 35px;
+        font-size: 40px;
       }
       &__author {
         font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-        font-size: 25px;
+        font-size: 20px;
         margin: 0 0 0 auto;
       }
       .fa.fa-chevron-down {
@@ -46,6 +46,10 @@
           visibility: visible;  // test
           color: red;
       }
+    }
+    h3 {
+      font-size: 22px;
+      display: inline-block;
     }
   }
 }
