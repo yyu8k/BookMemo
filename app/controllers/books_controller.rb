@@ -11,7 +11,11 @@ class BooksController < ApplicationController
   end
 
   def create
-    Book.create(title: book_params[:title], author: book_params[:author], text: book_params[:text])
+    @books = Book.new(book_params)
+    if @books.save
+    else        
+      redirect_to root_path
+    end
   end
 
   def destroy
