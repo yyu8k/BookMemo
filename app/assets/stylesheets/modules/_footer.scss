@@ -6,6 +6,23 @@
   text-align: center;
 }
 
+// ここからページネーション
+
+@mixin GrayButtons{
+  display: inline-block;
+  color: #f0f8ff;
+  background: #708090;
+  text-decoration: none;
+  text-align: center;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  margin: 0 6px;
+  transition: .2s ease-in-out;
+  white-space: nowrap;
+  border-radius: 50%;
+}
+
 .pagination {
   background-color: #dcdcdc;
   margin: 0 auto;
@@ -23,67 +40,28 @@
 }
 
 .first {
+  @include GrayButtons;
   font-size: 11px;
-  display: inline-block;
-  color: #f0f8ff;
-  background: #708090;
-  text-decoration: none;
-  text-align: center;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  margin: 0 6px;
-  transition: .2s ease-in-out;
-  white-space: nowrap;
-  border-radius: 50%;
 }
 
 .prev {
+  @include GrayButtons;
   font-size: 11px;
-  display: inline-block;
-  color: #f0f8ff;
-  background: #708090;
-  text-decoration: none;
-  text-align: center;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  margin: 0 6px;
-  transition: .2s ease-in-out;
-  white-space: nowrap;
-  border-radius: 50%;
 }
 
 .next {
+  @include GrayButtons;
   font-size: 11px;
-  display: inline-block;
-  color: #f0f8ff;
-  background: #708090;
-  text-decoration: none;
-  text-align: center;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  margin: 0 6px;
-  transition: .2s ease-in-out;
-  white-space: nowrap;
-  border-radius: 50%;
 }
 
 .last {
+  @include GrayButtons;
   font-size: 11px;
-  display: inline-block;
-  color: #f0f8ff;
-  background: #708090;
-  text-decoration: none;
-  text-align: center;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  margin: 0 6px;
-  transition: .2s ease-in-out;
-  white-space: nowrap;
-  border-radius: 50%;
+}
+
+.page {
+  @include GrayButtons;
+  font-size: 13px;
 }
 
 .page.current {
@@ -98,17 +76,3 @@
   line-height: 44px;
   margin: 0 6px;
 }
-
-.page {
-  display: inline-block;
-  color: #f0f8ff;
-  font-size: 13px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: #708090;
-  text-align:center;
-  line-height: 44px;
-  margin: 0 6px;
-}
-
