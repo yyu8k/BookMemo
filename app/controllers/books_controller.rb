@@ -10,13 +10,13 @@ class BooksController < ApplicationController
     @books = Book.new
   end
 
+  def create
+    Book.create(title: book_params[:title], author: book_params[:author], text: book_params[:text])
+  end
+
   def destroy
     @books.destroy
     redirect_to root_path
-  end
-
-  def create
-    Book.create(title: book_params[:title], author: book_params[:author], text: book_params[:text])
   end
 
   private
