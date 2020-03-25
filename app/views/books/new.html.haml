@@ -3,7 +3,7 @@
   .books__new__post
     %i.fa.fa-edit &nbsp; 投稿する
   .books__new__form
-  = form_with model: @book, local: true, class: "books__new__form" do |f|
+  = form_with model: @books, local: true, class: "books__new__form" do |f|
     %h1 タイトル
     = f.text_field(:title, class: "text-field", placeholder: "タイトルを入力してください")
     %br
