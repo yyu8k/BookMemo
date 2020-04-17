@@ -1,5 +1,10 @@
 .books__index__header
   = link_to "BOOK MEMO", root_path, class: "books__index__header__title"
-  -# %h1 BOOK MEMO
+  - if user_signed_in?
+    = link_to "SIGN IN", new_user_session_path, class: "books__index__header__sission"
+    %i.fa.fa-user
+  - else
+    = link_to "SIGN UP", new_user_registration_path, class: "books__index__header__registration"
+    %i.fa.fa-user
   = link_to "WRITE", new_book_path, class: "books__index__header__write"
   %i.fa.fa-edit
