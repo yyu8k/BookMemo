@@ -57,6 +57,7 @@
 .books__new {
   background-color: #dcdcdc;
   color: #282d33;
+  height: 100vh;
   .books__new__post {
     text-align: center;
     margin: 40px 0 20px;
@@ -95,7 +96,7 @@
     }
     &__button {
       margin: 20px 0;
-      text-align:center;
+      text-align: center;
       .submit-button {
         color: #f0f8ff;
         width: 30%;
