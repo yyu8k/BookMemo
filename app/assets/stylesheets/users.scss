@@ -30,8 +30,6 @@
       background-color: #ccc;
     }
     &__submit {
-      // margin: 200px 0;
-      // padding: 20px 0;
       text-align: center;
       .submit-button {
         color: #f0f8ff;
@@ -111,4 +109,51 @@
 }
 .devise-links:hover {
   opacity: 0.4;
+}
+
+.User-password {
+  height: 100vh;
+  overflow: scroll;
+  background-color: #dcdcdc;
+  color: #282d33;
+  &__title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 30px;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+    font-weight: 200;
+    .fa.fa-key {
+      size: 20px;
+    }
+    &__message {
+      margin: 15px 0;
+      h1 {
+        font-size: 20px;
+        font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+        font-weight: 200;
+      }
+    }
+  }
+  &__main {
+    &__submit {
+      margin: 40px 0 0;
+      text-align: center;
+      .submit-button {
+        color: #f0f8ff;
+        width: 30%;
+        height: 40px;
+        display: inline-block;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        border: solid 2px #ccc;
+        border-radius: 3px;
+        transition: .4s;
+        font-size: 16px;
+        background: #282d33;
+      }
+      .submit-button:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
