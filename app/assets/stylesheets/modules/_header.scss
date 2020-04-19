@@ -11,16 +11,27 @@
     margin: 0 0 0 50px;
     line-height: 90px;
   }
-  &__registration {
+  &__login {
     color: #f0f8ff;
     font-size: 18px;
     text-decoration: none;
     line-height: 91px;
     float: right;
-    right: 150px;
-    position: absolute;
+    margin: 0 15px 0 0;
+    overflow: hidden;
   }
-  &__registration:hover {
+  &__login:hover {
+    opacity: 0.4;
+  }
+  &__logout {
+    color: #f0f8ff;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 91px;
+    float: right;
+    margin: 0 15px 0 0;
+  }
+  &__logout:hover {
     opacity: 0.4;
   }
   .fa.fa-user {
@@ -30,7 +41,6 @@
     line-height: 90px;
     margin: 0 5px 0 0;
     right: 221px;
-    position: absolute;
   }
   &__write {
     color: #f0f8ff;
