@@ -1,0 +1,159 @@
+.User-registration {
+  height: 100vh;
+  overflow: scroll;
+  background-color: #dcdcdc;
+  color: #282d33;
+  &__title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 30px;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+    font-weight: 200;
+    .fa.fa-user {
+      size: 20px;
+    }
+  }
+  &__main {
+    width: 40%;
+    margin: 0 auto;
+    label {
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .text-field {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      background-color: #ccc;
+    }
+    &__submit {
+      text-align: center;
+      .submit-button {
+        color: #f0f8ff;
+        width: 30%;
+        height: 40px;
+        display: inline-block;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        border: solid 2px #ccc;
+        border-radius: 3px;
+        transition: .4s;
+        font-size: 16px;
+        background: #282d33;
+      }
+      .submit-button:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.User-session {
+  height: 100vh;
+  background-color: #dcdcdc; 
+  color: #282d33;
+  &__title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 30px;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+    font-weight: 200;
+    .fa.fa-user {
+      size: 20px;
+    }
+  }
+  &__main {
+    width: 40%;
+    margin: 0 auto;
+    label {
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .text-field {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      background-color: #ccc;
+    }
+    &__submit {
+      margin: 20px 0;
+      text-align: center;
+      .submit-button {
+        color: #f0f8ff;
+        width: 30%;
+        height: 40px;
+        display: inline-block;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        border: solid 2px #ccc;
+        border-radius: 3px;
+        transition: .4s;
+        font-size: 16px;
+        background: #282d33;
+      }
+      .submit-button:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+.devise-links {
+  color: #282d33;
+}
+.devise-links:hover {
+  opacity: 0.4;
+}
+
+.User-password {
+  height: 100vh;
+  overflow: scroll;
+  background-color: #dcdcdc;
+  color: #282d33;
+  &__title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 30px;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+    font-weight: 200;
+    .fa.fa-key {
+      size: 20px;
+    }
+    &__message {
+      margin: 15px 0;
+      h1 {
+        font-size: 20px;
+        font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+        font-weight: 200;
+      }
+    }
+  }
+  &__main {
+    &__submit {
+      margin: 40px 0 0;
+      text-align: center;
+      .submit-button {
+        color: #f0f8ff;
+        width: 30%;
+        height: 40px;
+        display: inline-block;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        border: solid 2px #ccc;
+        border-radius: 3px;
+        transition: .4s;
+        font-size: 16px;
+        background: #282d33;
+      }
+      .submit-button:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

@@ -1,5 +1,10 @@
 .books__index__header
   = link_to "BOOK MEMO", root_path, class: "books__index__header__title"
-  -# %h1 BOOK MEMO
   = link_to "WRITE", new_book_path, class: "books__index__header__write"
   %i.fa.fa-edit
+  - if user_signed_in?
+    = link_to "LOG OUT", destroy_user_session_path, method: :delete, class: "books__index__header__logout"
+    %i.fa.fa-user
+  - else
+    = link_to "LOG IN", new_user_session_path, class: "books__index__header__login"
+    %i.fa.fa-user
