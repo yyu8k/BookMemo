@@ -18,6 +18,9 @@ class BooksController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   def destroy
     @books.destroy
     redirect_to root_path

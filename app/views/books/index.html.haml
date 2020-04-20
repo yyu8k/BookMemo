@@ -8,8 +8,13 @@
           .books__index__contents__memo__header__title
             = book.title
           ”
-          = link_to book_path(book.id), method: :delete, data: { confirm: "削除しますか？" }  do
-            = fa_icon 'chevron-down'
+          .books__index__contents__memo__header__check
+            %i.fa.fa-chevron-down
+            .books__index__contents__memo__header__check__more
+              .books__index__contents__memo__header__check__more__list 
+                = link_to '編集', edit_book_path(book.id)
+              .books__index__contents__memo__header__check__more__list
+                = link_to '削除', book_path(book.id), method: :delete, data: { confirm: "削除しますか？" }
         .books__index__contents__memo__header
           .books__index__contents__memo__header__author
             = book.author
