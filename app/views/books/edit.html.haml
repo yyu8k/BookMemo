@@ -1,0 +1,21 @@
+.books__edit
+  = render 'shared/header'
+  .books__edit__title
+    %i.fa.fa-edit &nbsp; 編集する
+  .books__edit__form
+  = form_with model: @books, local: true, class: "books__edit__form" do |f|
+    %h1 タイトル
+    = f.text_field(:title, class: "text-field", placeholder: "タイトルを入力してください")
+    %br
+    %br
+    %h1 著者
+    = f.text_field(:author, class: "text-field", placeholder: "著者を入力してください")
+    %br
+    %br
+    %h1 メモ
+    = f.text_area(:text, class: "text-area", placeholder: "")
+    %br
+    %br
+    .books__edit__form__button
+      = f.submit "送信", class: "submit-button"
+  = render 'shared/footer'
