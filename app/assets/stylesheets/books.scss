@@ -88,6 +88,7 @@
 }
 
 .books__new {
+  overflow: scroll;
   background-color: #dcdcdc;
   color: #282d33;
   height: 100vh;
@@ -169,7 +170,65 @@
 }
 
 .books__edit {
+  overflow: scroll;
   background-color: #dcdcdc;
   color: #282d33;
   height: 100vh;
+  &__title {
+    text-align: center;
+    margin: 40px 0 20px;
+    font-size: 30px;
+    font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+    font-weight: 200;
+    .fa.fa-edit {
+      size: 20px;
+    }
+  }
+  &__form {
+    width: 40%;
+    margin: 0 auto;
+    h1 {
+      font-weight: normal;
+      font-size: 20px;
+    }
+    .text-field {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      background-color: #ccc;
+    }
+    .text-area {
+      background-color: #ccc;
+      width: 100%;
+      height: 90px;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      resize: none;            // 右下の//を消すため
+    }
+    &__button {
+      margin: 20px 0;
+      text-align: center;
+      .submit-button {
+        color: #f0f8ff;
+        width: 30%;
+        height: 40px;
+        display: inline-block;
+        padding: 0.3em 1em;
+        text-decoration: none;
+        border: solid 2px #ccc;
+        border-radius: 3px;
+        transition: .4s;
+        font-size: 16px;
+        background: #282d33;
+      }
+      .submit-button:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }
