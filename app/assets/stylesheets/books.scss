@@ -39,12 +39,45 @@
         font-size: 20px;
         display: inline-block;  // test
       }
-      .fa.fa-chevron-down:hover {
-        opacity: 0.8;
+      &__check {
+        height: 10px;
+        width: 10px;
+        &__more {
+          height: 0;
+          padding: 0;
+          overflow: hidden;
+          opacity: 0;
+          transition: 0.2s;
+          height: 60px;
+          width: 90px;
+          background-color: #f0f8ff;
+          right: 30px;
+          top: 40px;
+          position: absolute;
+          &__list {
+            height: 20px;
+            width: 90px;
+            font-size: 12px;
+            color: #282d33;
+            font-family: 'ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo;
+            font-weight: 200;
+            text-align: center;
+            padding: 5px 0;
+            a {
+              color: #282d33;
+              text-decoration: none;
+            }
+          }
+          &__list:hover {
+            background-color: #708090;
+            color: #f0f8ff;
+          }
+        }
       }
-      .fa.fa-chevron-down:hover .books__index__contents__memo__header__more {
-          visibility: visible;  // test
-          color: red;
+      &__check:hover {
+        .books__index__contents__memo__header__check__more {
+        opacity: 1;
+        }
       }
     }
     h3 {
@@ -133,4 +166,10 @@
       font-size: 40px;
     }
   }
+}
+
+.books__edit {
+  background-color: #dcdcdc;
+  color: #282d33;
+  height: 100vh;
 }
